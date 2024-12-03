@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root{
+    --c1: #30182b;
+    --c2: #f0f1bc;
+    --c3: #60f0c0;
+    --c4: #ff360e;
+    --c5: #191f04;
+    --c6: #d7d4cc;
+
+    --font: 'JetBrains Mono', monospace;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width: 350px;
+    height: 550px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+form input, form button, form select {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    margin: 0px 0px 20px 0px;
+    border: none;
+    offset: none;
+    outline: none;
+}
+
+form input, form select {
+    border: 2px solid var(--c5);
+    border-radius: 5px;
+    transition: border-bottom .3s ease-in-out;
+}
+
+form input:hover, 
+form input:focus, 
+form select:hover,
+form select:focus {
+    cursor: pointer;
+    border-bottom: 2px solid var(--c3);
+    border-radius: 5px;
+}

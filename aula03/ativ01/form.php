@@ -53,11 +53,11 @@
         
         <label for="cidade">Cidade:</label>
         <input type="text" name="cidade">
-
-        <label for="cidade">Idade:</label>
+        
+        <label for="idade">Idade:</label>
         <input type="number" name="idade">
-
-        <label for="estado">
+        
+        <label for="estado">Estado:</label>
         <select name="estado">
             <?= $gerarSelectOptios($estados) ?>
         </select>
